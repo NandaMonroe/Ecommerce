@@ -25,18 +25,24 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  background-color: gray;
-  padding: 10px 20px;
+  background-color: lightgray;
   border-radius: 10px;
+  padding: 5px 5px;
 }
 
 .searchInput {
   border: none;
   background-color: transparent;
+  padding: 10px 20px;
 }
 
 .searchInput::placeholder {
-  color: lightgray;
+  color: white;
+}
+
+.searchIcon {
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 .limitedOffer {
@@ -364,4 +370,50 @@ label {
   justify-content: center;
   cursor: pointer;
   padding: 2px;
+}
+
+/* GALLERY */
+
+.gallery {
+  padding: 50px;
+  display: flex;
+}
+
+.galleryItem {
+  flex: 1;
+  padding: 50px;
+}
+
+.galleryImg {
+  width: 100%;
+}
+
+.newSeason {
+  display: flex;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsImg {
+  width: 100%;
+  height: 500px;
+}
+
+.nsTitle {
+  font-size: 40px;
+}
+
+.nsButton {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
